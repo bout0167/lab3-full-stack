@@ -1,7 +1,12 @@
 # CST8915 Lab 3 - Algonquin Pet Store
 
 ## Architecture
+- RabbitMQ -> Azure Virtual Machine
+- Product service -> Azure Web App
+- Order service -> Azure Web App
+- Store front -> Azure Virtual Machine
 
+The Store front gets products from the Product service and sends orders to the Order service. The Order service sends orders to RabbitMQ.
 
 ## Service URLs
 - [Product service](https://product-service-lab3-bout0167-dcc7fwgsajfbbubr.mexicocentral-01.azurewebsites.net/products)
